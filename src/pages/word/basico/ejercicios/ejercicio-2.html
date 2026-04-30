@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2: Recibo de pago | OfficeGas Eficiente</title>
+
+    <link rel="icon" type="image/svg+xml" href="../../../../assets/icons/favicon.svg">
+    <link rel="stylesheet" href="../../../../assets/css/main.css">
+    <link rel="stylesheet" href="../../../../assets/css/niveles.css">
+    <link rel="stylesheet" href="../../../../assets/css/contenido.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="header-container"></div>
+
+    <div class="nivel-layout">
+        <div id="sidebar-container"></div>
+
+        <main class="contenido-nivel">
+            <div class="modulo-nav">
+                <span class="modulo-badge">Word Básico</span>
+                <span class="modulo-numero">Ejercicio integrador 2 de 3</span>
+            </div>
+
+            <h1>Ejercicio 2: Recibo de pago</h1>
+            <p class="subtitulo">Crea un recibo de pago para una venta al contado de bombonas.</p>
+
+            <section class="contenido-seccion">
+                <h2>Datos del ejercicio</h2>
+
+                <table class="tabla-contenido">
+                    <thead>
+                        <tr>
+                            <th>Concepto</th>
+                            <th>Dato</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Cliente</strong></td>
+                            <td>María Gómez (particular)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tipo de pago</strong></td>
+                            <td>Contado</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Producto</strong></td>
+                            <td>Bombona Pequeña 12 kg</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cantidad</strong></td>
+                            <td>2 unidades</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Precio unitario</strong></td>
+                            <td>2,000 XAF</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td>4,000 XAF</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Recibo número</strong></td>
+                            <td>RC-2024-0158</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="contenido-seccion">
+                <h2>Instrucciones paso a paso</h2>
+
+                <div class="parte-item" style="margin-bottom: 1rem;">
+                    <h3>Paso 1: Encabezado del recibo</h3>
+                    <p>Escribe <strong>RECIBO DE PAGO</strong> centrado, negrita, tamaño 18, subrayado. Debajo el número
+                        de recibo: <strong>Nº RC-2024-0158</strong> alineado a la derecha.</p>
+                </div>
+
+                <div class="parte-item" style="margin-bottom: 1rem;">
+                    <h3>Paso 2: Datos del cliente</h3>
+                    <p>Escribe: <strong>Recibí de: María Gómez</strong> en negrita. Debajo: <strong>La cantidad de:
+                            4,000 XAF</strong> en negrita y subrayado.</p>
+                </div>
+
+                <div class="parte-item" style="margin-bottom: 1rem;">
+                    <h3>Paso 3: Concepto</h3>
+                    <p>Escribe: <strong>Por concepto de: Compra de 2 Bombonas Pequeñas de 12 kg a 2,000 XAF cada
+                            una.</strong></p>
+                </div>
+
+                <div class="parte-item" style="margin-bottom: 1rem;">
+                    <h3>Paso 4: Fecha y firma</h3>
+                    <p>Inserta la fecha actual a la derecha. Al final, escribe <strong>Firma: _______________</strong> y
+                        <strong>Gas Butano Centroafricano</strong> como emisor.</p>
+                </div>
+
+                <div class="parte-item">
+                    <h3>Paso 5: Guardar</h3>
+                    <p>Guarda el documento como <strong>Recibo_RC-2024-0158_Maria_Gomez.docx</strong></p>
+                </div>
+            </section>
+
+            <section class="contenido-seccion contexto-gas">
+                <h2>Diferencia entre recibo y carta de entrega</h2>
+                <p>El <strong>recibo de pago</strong> se entrega cuando el cliente paga en el momento (contado). La
+                    <strong>carta de entrega</strong> se usa para documentar la entrega de productos, especialmente a
+                    crédito. Ambos son documentos importantes para tu negocio.</p>
+            </section>
+
+            <section class="ejercicio-interactivo">
+                <h2>Pregunta de refuerzo</h2>
+                <p class="ejercicio-instruccion">¿Cuál es la diferencia principal entre un recibo y una carta de
+                    entrega?</p>
+
+                <div id="ejercicio-e2">
+                    <label><input type="radio" name="e2-p1" value="a"> No hay diferencia, son lo mismo</label><br>
+                    <label><input type="radio" name="e2-p1" value="b"> El recibo confirma el pago, la carta de entrega
+                        confirma la recepción de productos</label><br>
+                    <label><input type="radio" name="e2-p1" value="c"> El recibo es para crédito, la carta para
+                        contado</label><br>
+                    <button class="btn-verificar" onclick="verificarOpcionMultiple('e2-p1', 'b', 'resultado-e2-1')"
+                        style="margin-top: 0.75rem;">Verificar</button>
+                </div>
+                <p class="resultado-ejercicio" id="resultado-e2-1"></p>
+            </section>
+
+            <nav class="modulo-navegacion">
+                <a href="ejercicio-1.html" class="nav-anterior">Ejercicio 1: Carta de entrega</a>
+                <a href="ejercicio-3.html" class="nav-siguiente">Ejercicio 3: Lista de precios</a>
+            </nav>
+        </main>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="../../../../assets/js/main.js"></script>
+    <script src="../../../../assets/js/navegacion.js"></script>
+    <script src="../../../../assets/js/ejercicios.js"></script>
+</body>
+
+</html>

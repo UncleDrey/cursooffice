@@ -1,0 +1,108 @@
+{
+    "id": "e1-1",
+    "nivel": 1,
+    "aplicacion": "Excel",
+    "titulo": "Lista de precios",
+    "duracion": "2 horas",
+    "objetivo": "Crear y gestionar una lista de precios de bombonas de gas",
+    "contexto_negocio": "Necesitamos una lista de precios clara para mostrar a los clientes. Debe incluir todos los productos y sus precios al contado y a credito.",
+    "datos_ejercicio": {
+        "productos": [
+            {
+                "codigo": "BG-23",
+                "producto": "Bombona Domestica 23kg",
+                "gas_neto": "10.5 kg",
+                "precio_contado": 3800,
+                "precio_credito": 4500
+            },
+            {
+                "codigo": "BG-68",
+                "producto": "Bombona Industrial 68kg",
+                "gas_neto": "35 kg",
+                "precio_contado": 5000,
+                "precio_credito": "No disponible"
+            },
+            {
+                "codigo": "BG-12",
+                "producto": "Bombona Pequena 12kg",
+                "gas_neto": "6 kg",
+                "precio_contado": 2000,
+                "precio_credito": 2500
+            },
+            {
+                "codigo": "BG-45",
+                "producto": "Bombona Semi-industrial 45kg",
+                "gas_neto": "22 kg",
+                "precio_contado": 4200,
+                "precio_credito": 4800
+            }
+        ],
+        "moneda": "XAF"
+    },
+    "ejercicios": [
+        {
+            "numero": 1,
+            "titulo": "Crear hoja de calculo nueva",
+            "instrucciones": [
+                "Abre Microsoft Excel",
+                "Selecciona 'Libro en blanco'",
+                "Guarda el archivo como 'Lista_Precios_Gas.xlsx'",
+                "Nombra la primera hoja como 'Precios'"
+            ],
+            "tiempo_estimado": "10 minutos"
+        },
+        {
+            "numero": 2,
+            "titulo": "Introducir encabezados y datos",
+            "instrucciones": [
+                "En fila 1, crea los encabezados: A1=Codigo, B1=Producto, C1=Gas Neto, D1=Precio Contado, E1=Precio Credito",
+                "Pon los encabezados en negrita y centrados",
+                "Introduce los datos de los 4 productos desde la fila 2",
+                "Los precios deben ir sin comas ni puntos (ej: 3800)"
+            ],
+            "tiempo_estimado": "20 minutos"
+        },
+        {
+            "numero": 3,
+            "titulo": "Aplicar formato de moneda",
+            "instrucciones": [
+                "Selecciona las columnas D y E (Precio Contado y Precio Credito)",
+                "Aplica formato de moneda",
+                "Configura el simbolo como 'XAF'",
+                "Asegurate de que muestre sin decimales"
+            ],
+            "tiempo_estimado": "15 minutos"
+        },
+        {
+            "numero": 4,
+            "titulo": "Ajustar formato de la hoja",
+            "instrucciones": [
+                "Ajusta el ancho de cada columna para que se vea todo el texto",
+                "Aplica un borde a la tabla (todos los bordes)",
+                "Pon color de fondo gris claro en los encabezados",
+                "Centra los datos de la columna 'Codigo' y 'Gas Neto'",
+                "Alinea a la izquierda la columna 'Producto'"
+            ],
+            "tiempo_estimado": "20 minutos"
+        },
+        {
+            "numero": 5,
+            "titulo": "Ordenar y finalizar",
+            "instrucciones": [
+                "Ordena la lista alfabeticamente por nombre de producto",
+                "Inmoviliza la fila de encabezados (Ver > Inmovilizar > Fila superior)",
+                "Revisa que todos los datos sean correctos",
+                "Guarda el archivo",
+                "Haz una vista previa de impresion en orientacion horizontal"
+            ],
+            "tiempo_estimado": "15 minutos"
+        }
+    ],
+    "resultado_esperado": "Lista de precios profesional con formato de moneda XAF, ordenada alfabeticamente y lista para imprimir o mostrar a clientes.",
+    "errores_comunes": [
+        "Olvidar guardar como .xlsx (guardar como .xls antiguo)",
+        "Introducir los precios con comas o puntos",
+        "No ajustar el ancho de columnas (datos cortados)",
+        "No inmovilizar paneles (dificil de leer al hacer scroll)"
+    ]
+}

@@ -1,0 +1,224 @@
+/* ===== HERO ===== */
+.hero {
+    background: linear-gradient(135deg, var(--color-oscuro) 0%, #2A1F45 50%, var(--color-primario) 100%);
+    color: var(--color-blanco);
+    padding: 6rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(131, 77, 251, 0.2) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(240, 225, 0, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    color: var(--color-blanco);
+    font-size: 3.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    color: var(--color-acento);
+}
+
+.hero p {
+    font-size: 1.25rem;
+    opacity: 0.8;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== FEATURES ===== */
+.features {
+    padding: 5rem 2rem;
+    background-color: var(--color-claro);
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 3rem;
+    color: var(--color-oscuro);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background-color: var(--color-blanco);
+    padding: 2.5rem 2rem;
+    border-radius: var(--radio-borde);
+    border: 1px solid rgba(131, 77, 251, 0.08);
+    transition: all var(--transicion);
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--sombra-media);
+    border-color: var(--color-primario);
+}
+
+.feature-icon {
+    margin: 0 auto 1.5rem;
+    opacity: 0.9;
+}
+
+.feature-card h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: var(--color-gris-texto);
+    line-height: 1.6;
+}
+
+/* ===== NIVELES PREVIEW ===== */
+.niveles-preview {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: var(--color-blanco);
+}
+
+.niveles-preview h2 {
+    margin-bottom: 3rem;
+}
+
+.niveles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.nivel-card {
+    background-color: var(--color-blanco);
+    padding: 2.5rem 2rem;
+    border-radius: var(--radio-borde);
+    border: 1px solid rgba(131, 77, 251, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: all var(--transicion);
+}
+
+.nivel-card:hover {
+    border-color: var(--color-primario);
+    box-shadow: var(--sombra-media);
+    transform: translateY(-4px);
+}
+
+.nivel-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--color-primario), #6F3AD4);
+    color: var(--color-blanco);
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    width: fit-content;
+    letter-spacing: 0.02em;
+}
+
+.nivel-icon {
+    margin-bottom: 1.25rem;
+}
+
+.nivel-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.nivel-card ul {
+    margin-bottom: 1.5rem;
+    flex: 1;
+}
+
+.nivel-card li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 0.95rem;
+    color: var(--color-gris-texto);
+}
+
+.nivel-card li:last-child {
+    border-bottom: none;
+}
+
+.nivel-card .btn-nivel {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .hero {
+        padding: 4rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .hero p {
+        font-size: 1.05rem;
+    }
+
+    .features,
+    .niveles-preview {
+        padding: 3rem 1rem;
+    }
+}
+
+/* ===== BOTÓN DESHABILITADO ===== */
+.btn-nivel.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.btn-nivel.disabled:hover {
+    background-color: var(--color-oscuro);
+    color: var(--color-blanco);
+    transform: none;
+    box-shadow: none;
+}
