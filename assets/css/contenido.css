@@ -335,3 +335,49 @@
         text-align: center;
     }
 }
+
+/* ===== IMÁGENES RESPONSIVE ===== */
+.imagen-ejemplo {
+    margin: 1.5rem 0;
+    border-radius: var(--radio-borde);
+    overflow: hidden;
+    border: 1px solid rgba(131, 77, 251, 0.1);
+    background-color: var(--color-blanco);
+    max-width: 100%;
+}
+
+.imagen-ejemplo img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    display: block;
+    background-color: var(--color-claro);
+}
+
+.imagen-pie {
+    display: block;
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+    color: var(--color-gris-texto);
+    background-color: var(--color-claro);
+    font-style: italic;
+}
+
+/* Evitar que imágenes sueltas se desborden */
+.contenido-nivel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radio-borde-sm);
+}
+
+/* Contenedor de imagen con relación de aspecto */
+.imagen-contenida {
+    max-width: 600px;
+    margin: 1.5rem auto;
+}
+
+.imagen-contenida img {
+    width: 100%;
+    height: auto;
+}

@@ -1,18 +1,183 @@
 <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
-        <span class="curso-badge" id="sidebar-curso-badge">Word</span>
-        <h3 id="sidebar-nivel-titulo">Básico</h3>
+        <h3>Cursos</h3>
     </div>
 
-    <nav aria-label="Menú de navegación del curso">
+    <nav aria-label="Menú de navegación de cursos">
         <ul class="sidebar-nav" id="sidebar-nav-list">
-            <!-- Se llena dinámicamente vía JavaScript -->
+            <!-- WORD -->
+            <li class="sidebar-group">
+                <a href="#" class="sidebar-toggle" data-group="word">
+                    <img src="assets/icons/file-text.svg" alt="" width="18" height="18">
+                    Microsoft Word
+                    <span class="sidebar-arrow"></span>
+                </a>
+                <ul class="sidebar-submenu" id="submenu-word">
+                    <li class="sidebar-group">
+                        <a href="#" class="sidebar-toggle" data-group="word-basico">
+                            <span class="sidebar-bullet"></span>
+                            Básico
+                            <span class="sidebar-arrow"></span>
+                        </a>
+                        <ul class="sidebar-submenu" id="submenu-word-basico">
+                            <li class="sidebar-group">
+                                <a href="#" class="sidebar-toggle" data-group="word-basico-temas">
+                                    <span class="sidebar-bullet"></span>
+                                    Temas
+                                    <span class="sidebar-arrow"></span>
+                                </a>
+                                <ul class="sidebar-submenu" id="submenu-word-basico-temas">
+                                    <li><a href="pages/word/basico/modulo-1-entorno-word.html">Módulo 1: Entorno de
+                                            Word</a></li>
+                                    <li><a href="pages/word/basico/modulo-2-crear-guardar.html">Módulo 2: Crear y
+                                            guardar</a></li>
+                                    <li><a href="pages/word/basico/modulo-3-escritura-edicion.html">Módulo 3: Escritura
+                                            y edición</a></li>
+                                    <li><a href="pages/word/basico/modulo-4-formato-fuente.html">Módulo 4: Formato
+                                            fuente y párrafo</a></li>
+                                    <li><a href="pages/word/basico/modulo-5-tablas-basicas.html">Módulo 5: Tablas
+                                            básicas</a></li>
+                                    <li><a href="pages/word/basico/modulo-6-imagenes-encabezado.html">Módulo 6: Imágenes
+                                            y encabezado</a></li>
+                                    <li><a href="pages/word/basico/modulo-7-configuracion-impresion.html">Módulo 7:
+                                            Impresión</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="pages/word/basico/ejercicios/ejercicio-1.html">Ejercicios</a></li>
+                            <li><a href="pages/word/basico/examen.html">Examen</a></li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-group">
+                        <a href="#" class="sidebar-toggle" data-group="word-intermedio">
+                            <span class="sidebar-bullet"></span>
+                            Intermedio
+                            <span class="sidebar-arrow"></span>
+                        </a>
+                        <ul class="sidebar-submenu" id="submenu-word-intermedio">
+                            <li class="sidebar-group">
+                                <a href="#" class="sidebar-toggle" data-group="word-intermedio-temas">
+                                    <span class="sidebar-bullet"></span>
+                                    Temas
+                                    <span class="sidebar-arrow"></span>
+                                </a>
+                                <ul class="sidebar-submenu" id="submenu-word-intermedio-temas">
+                                    <li><a href="pages/word/intermedio/modulo-1-estilos-temas.html">Módulo 1: Estilos y
+                                            temas</a></li>
+                                    <li><a href="pages/word/intermedio/modulo-2-tabla-contenido.html">Módulo 2: Tabla de
+                                            contenido</a></li>
+                                    <li><a href="pages/word/intermedio/modulo-3-carta-formal.html">Módulo 3: Carta
+                                            formal</a></li>
+                                    <li><a href="pages/word/intermedio/modulo-4-contratos-gpl.html">Módulo 4: Contratos
+                                            GPL</a></li>
+                                    <li><a href="pages/word/intermedio/modulo-5-correspondencia.html">Módulo 5:
+                                            Correspondencia</a></li>
+                                    <li><a href="pages/word/intermedio/modulo-6-combinar-correspondencia.html">Módulo 6:
+                                            Combinar correspondencia</a></li>
+                                    <li><a href="pages/word/intermedio/modulo-7-imagen-corporativa.html">Módulo 7:
+                                            Imagen corporativa</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="pages/word/intermedio/ejercicios/ejercicio-1.html">Ejercicios</a></li>
+                            <li><a href="pages/word/intermedio/examen.html">Examen</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- EXCEL -->
+            <li class="sidebar-group">
+                <a href="#" class="sidebar-toggle" data-group="excel">
+                    <img src="assets/icons/chart-bar.svg" alt="" width="18" height="18">
+                    Microsoft Excel
+                    <span class="sidebar-arrow"></span>
+                </a>
+                <ul class="sidebar-submenu" id="submenu-excel">
+                    <li class="sidebar-group">
+                        <a href="#" class="sidebar-toggle" data-group="excel-basico">
+                            <span class="sidebar-bullet"></span>
+                            Básico
+                            <span class="sidebar-arrow"></span>
+                        </a>
+                        <ul class="sidebar-submenu" id="submenu-excel-basico">
+                            <li class="sidebar-group">
+                                <a href="#" class="sidebar-toggle" data-group="excel-basico-temas">
+                                    <span class="sidebar-bullet"></span>
+                                    Temas
+                                    <span class="sidebar-arrow"></span>
+                                </a>
+                                <ul class="sidebar-submenu" id="submenu-excel-basico-temas">
+                                    <li><a href="pages/excel/basico/modulo-1-entorno-excel.html">Módulo 1: Entorno de
+                                            Excel</a></li>
+                                    <li><a href="pages/excel/basico/modulo-2-introducir-datos.html">Módulo 2: Introducir
+                                            datos</a></li>
+                                    <li><a href="pages/excel/basico/modulo-3-formulas-basicas.html">Módulo 3: Fórmulas
+                                            básicas</a></li>
+                                    <li><a href="pages/excel/basico/modulo-4-formato-celdas.html">Módulo 4: Formato de
+                                            celdas</a></li>
+                                    <li><a href="pages/excel/basico/modulo-5-ordenar-filtrar.html">Módulo 5: Ordenar y
+                                            filtrar</a></li>
+                                    <li><a href="pages/excel/basico/modulo-6-graficos-ventas.html">Módulo 6: Gráficos de
+                                            ventas</a></li>
+                                    <li><a href="pages/excel/basico/modulo-7-imprimir-guardar.html">Módulo 7: Imprimir y
+                                            guardar</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="pages/excel/basico/ejercicios/ejercicio-1.html">Ejercicios</a></li>
+                            <li><a href="pages/excel/basico/examen.html">Examen</a></li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-group">
+                        <a href="#" class="sidebar-toggle" data-group="excel-intermedio">
+                            <span class="sidebar-bullet"></span>
+                            Intermedio
+                            <span class="sidebar-arrow"></span>
+                        </a>
+                        <ul class="sidebar-submenu" id="submenu-excel-intermedio">
+                            <li class="sidebar-group">
+                                <a href="#" class="sidebar-toggle" data-group="excel-intermedio-temas">
+                                    <span class="sidebar-bullet"></span>
+                                    Temas
+                                    <span class="sidebar-arrow"></span>
+                                </a>
+                                <ul class="sidebar-submenu" id="submenu-excel-intermedio-temas">
+                                    <li><a href="pages/excel/intermedio/modulo-1-funcion-si.html">Módulo 1: Función
+                                            SI</a></li>
+                                    <li><a href="pages/excel/intermedio/modulo-2-buscarv.html">Módulo 2: BUSCARV</a>
+                                    </li>
+                                    <li><a href="pages/excel/intermedio/modulo-3-control-deudas.html">Módulo 3: Control
+                                            de deudas</a></li>
+                                    <li><a href="pages/excel/intermedio/modulo-4-sumar-si.html">Módulo 4: SUMAR.SI</a>
+                                    </li>
+                                    <li><a href="pages/excel/intermedio/modulo-5-formato-condicional.html">Módulo 5:
+                                            Formato condicional</a></li>
+                                    <li><a href="pages/excel/intermedio/modulo-6-tablas-dinamicas.html">Módulo 6: Tablas
+                                            dinámicas</a></li>
+                                    <li><a href="pages/excel/intermedio/modulo-7-dashboard-gpl.html">Módulo 7: Dashboard
+                                            GPL</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="pages/excel/intermedio/ejercicios/ejercicio-1.html">Ejercicios</a></li>
+                            <li><a href="pages/excel/intermedio/examen.html">Examen</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- POWERPOINT -->
+            <li class="sidebar-group">
+                <a href="#" class="sidebar-toggle disabled-link" data-group="powerpoint">
+                    <img src="assets/icons/trending.svg" alt="" width="18" height="18">
+                    Microsoft PowerPoint
+                    <span class="proximamente-badge">Próx.</span>
+                    <span class="sidebar-arrow"></span>
+                </a>
+            </li>
         </ul>
     </nav>
 </aside>
 
-<button class="sidebar-toggle" id="sidebar-toggle-btn" aria-label="Abrir menú de navegación">
-    <img src="../assets/icons/menu.svg" alt="" width="24" height="24">
+<button class="sidebar-toggle-btn" id="sidebar-toggle-btn" aria-label="Abrir menú de navegación">
+    <img src="assets/icons/menu.svg" alt="" width="24" height="24">
 </button>
 
 <div class="sidebar-overlay" id="sidebar-overlay"></div>
